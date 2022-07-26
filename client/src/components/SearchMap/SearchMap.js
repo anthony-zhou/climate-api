@@ -20,7 +20,7 @@ const SearchMap = (props) => {
   }
 
   const handleSubmit = (address) => {
-    const apiUrl = process.env.NEXT_ENV == 'production' ?
+    const apiUrl = process.env.NODE_ENV == 'production' ?
       'https://climate-heat-map.herokuapp.com' : 'http://127.0.0.1:5000';
 
     const url = apiUrl + '/data?address=' + encodeURIComponent(address);
