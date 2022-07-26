@@ -1,4 +1,4 @@
-# heat-map
+# Climate Heat Map
 
 Enter a street address to see heat projections for that area. 
 
