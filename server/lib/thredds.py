@@ -7,7 +7,7 @@ def _fetch_dataset_urls():
     # Parse dataset URLs from the XML file
     dataset_urls = []
     total_storage_req = 0.0
-    tree = ElementTree.parse('giss_catalog.xml')
+    tree = ElementTree.parse('./lib/giss_catalog.xml')
     root = tree.getroot()
 
     xmlns = "http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"
@@ -32,6 +32,7 @@ def _load_datasets(years):
     """
     def get_year(u):
         return int(u[-7:-3])
+
     def years_includes(u):
         return get_year(u) in years
 
@@ -40,7 +41,7 @@ def _load_datasets(years):
     return datasets
 
 
-def get_average_temperature(coords: tuple, years: list(int), window_size=60):
+def get_average_temperature(coords: tuple, years: list[int], window_size=60):
     """
     Get downscaled surface temperature projections for the given years.
     Arguments:
@@ -53,7 +54,6 @@ def get_average_temperature(coords: tuple, years: list(int), window_size=60):
     """
     lat = coords[0]
     lon = coords[1] if coords[1] > 0 else 360 + coords[1]
-
     datasets = _load_datasets(years)
     result = {}
     for year, data in datasets.items():
@@ -65,5 +65,9 @@ def get_average_temperature(coords: tuple, years: list(int), window_size=60):
         for day in sample_days:
             total += data['tas'][day, jj, ii]
         result[year] = total / len(sample_days) - 273.15
+
+    for year in years:
+        if year not in result:
+            result[year] = "Not found"
 
     return result

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0.1">
+  <service name="all" serviceType="Compound" base="">
+    <service name="odap" serviceType="OPENDAP" base="/thredds/dodsC/" />
+    <service name="http" serviceType="HTTPServer" base="/thredds/fileServer/" />
+    <service name="ncss" serviceType="NetcdfSubset" base="/thredds/ncss/grid/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+  </service>
+  <dataset name="tas" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas">
+    <serviceName>all</serviceName>
+    <metadata inherited="true">
+      <serviceName>all</serviceName>
+    </metadata>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2100.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2100.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2100.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:35:56Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2099.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2099.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2099.nc">
+      <dataSize units="Mbytes">245.5</dataSize>
+      <date type="modified">2021-10-31T03:35:47Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2098.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2098.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2098.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:35:39Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2097.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2097.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2097.nc">
+      <dataSize units="Mbytes">246.2</dataSize>
+      <date type="modified">2021-10-31T03:35:32Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2096.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2096.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2096.nc">
+      <dataSize units="Mbytes">245.5</dataSize>
+      <date type="modified">2021-10-31T03:35:24Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2095.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2095.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2095.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:35:16Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2094.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2094.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2094.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2021-10-31T03:35:08Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2093.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2093.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2093.nc">
+      <dataSize units="Mbytes">245.5</dataSize>
+      <date type="modified">2021-10-31T03:35:00Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2092.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2092.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2092.nc">
+      <dataSize units="Mbytes">245.5</dataSize>
+      <date type="modified">2021-10-31T03:34:52Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2091.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2091.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2091.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:34:44Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2090.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2090.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2090.nc">
+      <dataSize units="Mbytes">246.2</dataSize>
+      <date type="modified">2021-10-31T03:34:36Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2089.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2089.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2089.nc">
+      <dataSize units="Mbytes">245.5</dataSize>
+      <date type="modified">2021-10-31T03:34:28Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2088.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2088.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2088.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:34:20Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2087.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2087.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2087.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:34:12Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2086.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2086.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2086.nc">
+      <dataSize units="Mbytes">244.8</dataSize>
+      <date type="modified">2021-10-31T03:34:04Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2085.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2085.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2085.nc">
+      <dataSize units="Mbytes">245.5</dataSize>
+      <date type="modified">2021-10-31T03:33:56Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2084.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2084.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2084.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2021-10-31T03:33:48Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2083.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2083.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2083.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2021-10-31T03:33:40Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2082.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2082.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2082.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:33:32Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2081.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2081.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2081.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:33:24Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2080.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2080.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2080.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:33:17Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2079.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2079.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2079.nc">
+      <dataSize units="Mbytes">246.2</dataSize>
+      <date type="modified">2021-10-31T03:33:09Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2078.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2078.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2078.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2021-10-31T03:33:01Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2077.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2077.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2077.nc">
+      <dataSize units="Mbytes">244.2</dataSize>
+      <date type="modified">2021-10-31T03:32:53Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2076.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2076.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2076.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:32:45Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2075.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2075.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2075.nc">
+      <dataSize units="Mbytes">246.9</dataSize>
+      <date type="modified">2021-10-31T03:32:37Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2074.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2074.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2074.nc">
+      <dataSize units="Mbytes">246.3</dataSize>
+      <date type="modified">2021-10-31T03:32:29Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2073.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2073.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2073.nc">
+      <dataSize units="Mbytes">244.3</dataSize>
+      <date type="modified">2021-10-31T03:32:21Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2072.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2072.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2072.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:32:13Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2071.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2071.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2071.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2021-10-31T03:32:04Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2070.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2070.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2070.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2021-10-31T03:31:56Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2069.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2069.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2069.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:31:48Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2068.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2068.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2068.nc">
+      <dataSize units="Mbytes">244.2</dataSize>
+      <date type="modified">2021-10-31T03:31:40Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2067.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2067.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2067.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:31:32Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2066.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2066.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2066.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:31:25Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2065.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2065.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2065.nc">
+      <dataSize units="Mbytes">246.3</dataSize>
+      <date type="modified">2021-10-31T03:31:17Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2064.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2064.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2064.nc">
+      <dataSize units="Mbytes">244.3</dataSize>
+      <date type="modified">2021-10-31T03:31:09Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2063.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2063.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2063.nc">
+      <dataSize units="Mbytes">244.8</dataSize>
+      <date type="modified">2021-10-31T03:31:01Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2062.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2062.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2062.nc">
+      <dataSize units="Mbytes">244.2</dataSize>
+      <date type="modified">2021-10-31T03:30:53Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2061.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2061.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2061.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2021-10-31T03:30:45Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2060.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2060.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2060.nc">
+      <dataSize units="Mbytes">245.0</dataSize>
+      <date type="modified">2021-10-31T03:30:37Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2059.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2059.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2059.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2021-10-31T03:30:29Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2058.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2058.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2058.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:30:21Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2057.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2057.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2057.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2021-10-31T03:30:14Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2056.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2056.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2056.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2021-10-31T03:30:06Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2055.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2055.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2055.nc">
+      <dataSize units="Mbytes">245.0</dataSize>
+      <date type="modified">2021-10-31T03:29:58Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2054.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2054.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2054.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:29:50Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2053.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2053.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2053.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:29:42Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2052.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2052.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2052.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2021-10-31T03:29:34Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2051.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2051.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2051.nc">
+      <dataSize units="Mbytes">246.3</dataSize>
+      <date type="modified">2021-10-31T03:29:26Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2050.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2050.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2050.nc">
+      <dataSize units="Mbytes">245.5</dataSize>
+      <date type="modified">2021-10-31T03:29:18Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2049.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2049.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2049.nc">
+      <dataSize units="Mbytes">246.2</dataSize>
+      <date type="modified">2021-10-31T03:29:10Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2048.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2048.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2048.nc">
+      <dataSize units="Mbytes">245.5</dataSize>
+      <date type="modified">2021-10-31T03:29:02Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2047.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2047.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2047.nc">
+      <dataSize units="Mbytes">245.0</dataSize>
+      <date type="modified">2021-10-31T03:28:54Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2046.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2046.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2046.nc">
+      <dataSize units="Mbytes">246.9</dataSize>
+      <date type="modified">2021-10-31T03:28:46Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2045.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2045.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2045.nc">
+      <dataSize units="Mbytes">244.3</dataSize>
+      <date type="modified">2021-10-31T03:28:38Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2044.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2044.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2044.nc">
+      <dataSize units="Mbytes">244.2</dataSize>
+      <date type="modified">2021-10-31T03:28:30Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2043.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2043.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2043.nc">
+      <dataSize units="Mbytes">244.1</dataSize>
+      <date type="modified">2021-10-31T03:28:22Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2042.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2042.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2042.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2021-10-31T03:28:14Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2041.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2041.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2041.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:28:06Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2040.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2040.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2040.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:27:58Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2039.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2039.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2039.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:27:50Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2038.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2038.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2038.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:27:42Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2037.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2037.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2037.nc">
+      <dataSize units="Mbytes">244.3</dataSize>
+      <date type="modified">2021-10-31T03:27:34Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2036.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2036.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2036.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2021-10-31T03:27:26Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2035.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2035.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2035.nc">
+      <dataSize units="Mbytes">244.2</dataSize>
+      <date type="modified">2021-10-31T03:27:18Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2034.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2034.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2034.nc">
+      <dataSize units="Mbytes">244.3</dataSize>
+      <date type="modified">2021-10-31T03:27:10Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2033.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2033.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2033.nc">
+      <dataSize units="Mbytes">244.3</dataSize>
+      <date type="modified">2021-10-31T03:27:02Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2032.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2032.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2032.nc">
+      <dataSize units="Mbytes">245.0</dataSize>
+      <date type="modified">2021-10-31T03:26:54Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2031.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2031.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2031.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2021-10-31T03:26:46Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2030.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2030.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2030.nc">
+      <dataSize units="Mbytes">246.3</dataSize>
+      <date type="modified">2021-10-31T03:26:38Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2029.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2029.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2029.nc">
+      <dataSize units="Mbytes">244.2</dataSize>
+      <date type="modified">2021-10-31T03:26:30Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2028.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2028.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2028.nc">
+      <dataSize units="Mbytes">244.3</dataSize>
+      <date type="modified">2021-10-31T03:26:22Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2027.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2027.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2027.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2021-10-31T03:26:14Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2026.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2026.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2026.nc">
+      <dataSize units="Mbytes">244.9</dataSize>
+      <date type="modified">2021-10-31T03:26:06Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2025.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2025.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2025.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2021-10-31T03:25:58Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2024.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2024.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2024.nc">
+      <dataSize units="Mbytes">245.7</dataSize>
+      <date type="modified">2021-10-31T03:25:50Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2023.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2023.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2023.nc">
+      <dataSize units="Mbytes">245.7</dataSize>
+      <date type="modified">2021-10-31T03:25:42Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2022.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2022.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2022.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2021-10-31T03:25:34Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2021.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2021.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2021.nc">
+      <dataSize units="Mbytes">245.7</dataSize>
+      <date type="modified">2021-10-31T03:25:26Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2020.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2020.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2020.nc">
+      <dataSize units="Mbytes">245.0</dataSize>
+      <date type="modified">2021-10-31T03:25:18Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2019.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2019.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2019.nc">
+      <dataSize units="Mbytes">246.3</dataSize>
+      <date type="modified">2021-10-31T03:25:10Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2018.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2018.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2018.nc">
+      <dataSize units="Mbytes">245.0</dataSize>
+      <date type="modified">2021-10-31T03:25:02Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2017.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2017.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2017.nc">
+      <dataSize units="Mbytes">245.6</dataSize>
+      <date type="modified">2021-10-31T03:24:55Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2016.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2016.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2016.nc">
+      <dataSize units="Mbytes">247.0</dataSize>
+      <date type="modified">2021-10-31T03:24:46Z</date>
+    </dataset>
+    <dataset name="tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2015.nc" ID="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2015.nc" urlPath="AMES/NEX/GDDP-CMIP6/GISS-E2-1-G/ssp245/r1i1p1f2/tas/tas_day_GISS-E2-1-G_ssp245_r1i1p1f2_gn_2015.nc">
+      <dataSize units="Mbytes">244.3</dataSize>
+      <date type="modified">2021-10-31T03:24:38Z</date>
+    </dataset>
+  </dataset>
+</catalog>
