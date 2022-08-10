@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Query
 import requests
 import os
 from dotenv import load_dotenv
@@ -24,7 +24,10 @@ def get_address_lat_lng(address):
 
 
 @app.get('/average_temp')
-def get_climate_data(address: str, years: str):
+def average_yearly_temperature(
+        address: str = Query(..., description="Street address. Example: `1600 Pennsylvania Ave NW, Washington DC`"),
+        years: str = Query(..., description="Comma-separated list of years. Example: `2020,2060`")
+):
     coords = get_address_lat_lng(address)
     years = [int(year) for year in years.split(',')]
     result = get_average_temperature(coords, years)
@@ -37,8 +40,8 @@ def get_climate_data(address: str, years: str):
 
 
 @app.get("/")
-def read_root():
-    return {"Hello": "World"}
+def api_status():
+    return {"Status": "Operational"}
 
 
 
