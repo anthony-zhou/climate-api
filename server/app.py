@@ -1,13 +1,12 @@
 import statistics
-from flask import Flask, request
-from flask_cors import CORS, cross_origin
+from fastapi import FastAPI
 import regionmask
 import geopandas
 from shapely import geometry
 import requests
 
-app = Flask(__name__)
-cors = CORS(app)
+app = FastAPI()
+
 
 def get_median(climate_data, year):
     items = []
@@ -57,9 +56,8 @@ def get_projections(region_index, year_1, year_2, location):
     return result
 
 
-@app.route('/data')
-def get_climate_data():
-    address = request.args.get('address')
+@app.get('/data')
+def get_climate_data(address: str):
     region_index, location = get_address_region(address)
     result = get_projections(region_index, 2022, 2040, location)
 
