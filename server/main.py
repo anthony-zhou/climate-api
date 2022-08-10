@@ -1,7 +1,5 @@
-import statistics
 from fastapi import FastAPI
 import requests
-from time import time
 import os
 from dotenv import load_dotenv
 
