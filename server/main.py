@@ -1,13 +1,17 @@
 import statistics
 from fastapi import FastAPI
 import requests
+from time import time
+import os
+from dotenv import load_dotenv
 
 from lib.thredds import get_average_temperature
+
+load_dotenv()
 
 app = FastAPI(title="Climate API", description="Downscaled climate projections from NASA's Global Daily Downscaled "
                                                "Projections (GDDP) dataset. Uses the GISS-E2-1-G model with the SSP2 "
                                                "4.5 emissions pathway.")
-
 
 def get_median(climate_data, year):
     items = []
@@ -21,11 +25,11 @@ def get_median(climate_data, year):
 # address = '1600 Pennsylvania Ave NW, Washington DC'
 
 def get_address_lat_lng(address):
-    query = {'access_key': '240b12f8fe3aa36cca02b35684d69055', 'query': address}
-    response = requests.get('http://api.positionstack.com/v1/forward', params=query)
-    data = response.json()['data']
-    location = data[0]
-    return (location['latitude'], location['longitude'])
+    maps_api_key = os.environ.get('MAPS_API_KEY')
+    params = {'key': maps_api_key, 'address': address}
+    response = requests.get('https://maps.googleapis.com/maps/api/geocode/json', params=params)
+    location = response.json()['results'][0]['geometry']['location']
+    return location['lat'], location['lng']
 #
 #     sample_point = geometry.Point(location['longitude'], location['latitude'])
 #     dataframe = regionmask.defined_regions.ar6.all.to_geodataframe()
