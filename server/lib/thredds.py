@@ -22,7 +22,6 @@ def _fetch_dataset_urls():
             data_size = item.find('ns:dataSize', ns)
             total_storage_req += float(data_size.text)
 
-    print(f"Found {len(dataset_urls)} dataset URLs. Total storage required: {total_storage_req} MB.")
     return dataset_urls
 
 
@@ -54,7 +53,9 @@ def get_average_temperature(coords: tuple, years: list[int], window_size=60):
     """
     lat = coords[0]
     lon = coords[1] if coords[1] > 0 else 360 + coords[1]
+
     datasets = _load_datasets(years)
+
     result = {}
     for year, data in datasets.items():
         jj = np.argmin((data['lat'][:] - lat) ** 2)
