@@ -1,3 +1,5 @@
+from time import time
+
 import numpy as np
 import xml.etree.ElementTree as ElementTree
 from netCDF4 import Dataset
@@ -40,7 +42,7 @@ def _load_datasets(years):
     return datasets
 
 
-def get_average_temperature(coords: tuple, years: list[int], window_size=60):
+def get_average_temperature(coords: tuple, years: list[int], window_size=40):
     """
     Get downscaled surface temperature projections for the given years.
     Arguments:
@@ -53,19 +55,27 @@ def get_average_temperature(coords: tuple, years: list[int], window_size=60):
     """
     lat = coords[0]
     lon = coords[1] if coords[1] > 0 else 360 + coords[1]
+    print(lat, lon)
 
     datasets = _load_datasets(years)
 
     result = {}
+
     for year, data in datasets.items():
+        # This is a more general form of finding closest coordinates.
         jj = np.argmin((data['lat'][:] - lat) ** 2)
         ii = np.argmin((data['lon'][:] - lon) ** 2)
 
-        total = 0.0
-        sample_days = range(0, 365, window_size)
-        for day in sample_days:
-            total += data['tas'][day, jj, ii]
-        result[year] = total / len(sample_days) - 273.15
+        # Here's a slightly faster version assuming 0.25 degree spacing.
+        # It sacrifices generality for only ~1.2x speed improvement,
+        # which is pretty insignificant in the grand scheme of things.
+        # jj = round((lat - data['lat'][0]) * 4)
+        # ii = round((lon - data['lon'][0]) * 4)
+
+        # Note: accessing data using ::window_size is much faster than using a for loop with range().
+        time_series = data['tas'][::window_size, jj, ii]
+        avg = np.sum(time_series) / len(time_series) - 273.15
+        result[year] = avg
 
     for year in years:
         if year not in result:
