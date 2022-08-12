@@ -42,7 +42,7 @@ environment if you want to run those.
 The Climate API is built using Python with FastAPI and deployed on Deta. Climate data comes from the NASA Earth Exchange
 Global Daily Downscaled Projections dataset, using the CMIP6 scenarios.
 
-## File structure
+## File Structure
 
 - The `client` folder contains code for the web app demo (incomplete)
 - The `server` folder contains code for serving the climate API:
@@ -50,13 +50,12 @@ Global Daily Downscaled Projections dataset, using the CMIP6 scenarios.
   - `lib` contains modules for business logic, primarily loading and processing the data. 
   - `notebooks` contains some experiments with downloading and processing climate data.
 
-## Up next
+## Next Steps
 
 Currently, the API is very slow for some types of requests. This is because we are computing yearly statistics from 
 daily projections. We could speed up the API greatly by computing yearly statistics (averages/sums/extremes) ahead of 
 time and storing them in a separate database.
 
 Perhaps more importantly, we would like to serve more than just the basic variables listed above. Implementing the 
-`xclim` (https://github.com/Ouranosinc/xclim) library for this API should let us estimate other important variables, like 
+`xclim` (https://github.com/Ouranosinc/xclim) library for this API will let us estimate other important variables, like 
 frequency of heat waves, intensity of cold spells, and drought codes.
-
