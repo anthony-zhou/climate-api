@@ -130,3 +130,26 @@ def get_average_humidity(coords: tuple, years: list[int], unit_var_name: str, wi
             result[year] = "Not found"
 
     return result
+
+
+def get_extreme_temperatures(coords: tuple, years: list[int], var_name: str, window_size=2):
+    lat = coords[0]
+    lon = coords[1] if coords[1] > 0 else 360 + coords[1]
+    datasets = _load_datasets(years, var_name=var_name)
+
+    result = {}
+    for year, data in datasets.items():
+        jj = np.argmin((data['lat'][:] - lat) ** 2)
+        ii = np.argmin((data['lon'][:] - lon) ** 2)
+
+        # Sample one out of every window_size precipitation rates.
+        time_series = data[var_name][::window_size, jj, ii]
+
+        # Convert precipitation flux to inches
+        result[year] = np.max(time_series).item() - 273.15
+
+    for year in years:
+        if year not in result:
+            result[year] = "Not found"
+
+    return result
