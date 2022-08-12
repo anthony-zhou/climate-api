@@ -2,14 +2,18 @@ from fastapi import FastAPI, Query
 import requests
 import os
 from dotenv import load_dotenv
+import urllib.parse
 
-from lib.thredds import get_average_temperature
+from lib.thredds import get_average_temperature, get_yearly_precipitation
 
 load_dotenv()
 
-app = FastAPI(title="Climate API", description="Downscaled climate projections from NASA's Global Daily Downscaled "
-                                               "Projections (GDDP) dataset. Uses the GISS-E2-1-G model with the SSP2 "
-                                               "4.5 emissions pathway.")
+description = """
+Downscaled climate projections from NASA's Global Daily Downscaled Projections (GDDP) CMIP6 dataset. 
+Uses the GISS-E2-1-G model with the SSP2 4.5 emissions pathway.
+"""
+
+app = FastAPI(title="Climate API", description="")
 
 
 # 1600%20Pennsylvania%20Ave%20NW%2C%20Washington%20DC
@@ -17,10 +21,14 @@ app = FastAPI(title="Climate API", description="Downscaled climate projections f
 
 def get_address_lat_lng(address):
     maps_api_key = os.environ.get('MAPS_API_KEY')
-    params = {'key': maps_api_key, 'address': address}
-    response = requests.get('https://maps.googleapis.com/maps/api/geocode/json', params=params)
-    location = response.json()['results'][0]['geometry']['location']
-    return location['lat'], location['lng']
+    params = {'key': maps_api_key, 'limit': 1}
+    address = urllib.parse.quote(address)
+    response = requests.get(f'https://api.tomtom.com/search/2/geocode/{address}.json', params=params)
+    results = response.json()['results']
+    if len(results) == 0:
+        return "Location not found"
+    location = results[0]['position']
+    return location['lat'], location['lon']
 
 
 @app.get('/average_temp')
@@ -33,8 +41,30 @@ def average_yearly_temperature(
     result = get_average_temperature(coords, years)
 
     return {
+        "name": "Average yearly surface temperature",
         "variable": "tas",
         "unit": "°C",
+        "data": result
+    }
+
+
+@app.get('/total_precipitation')
+def total_yearly_precipitation(
+        address: str = Query(..., description="Street address. Example: `1600 Pennsylvania Ave NW, Washington DC`"),
+        years: str = Query(..., description="Comma-separated list of years. Example: `2020,2060`")
+):
+    coords = get_address_lat_lng(address)
+    if coords == "Location not found":
+        return {
+            "message": "Location not found. Either specify more of the address, or try a different address."
+        }
+    years = [int(year) for year in years.split(',')]
+    result = get_yearly_precipitation(coords, years)
+
+    return {
+        "name": "Total yearly precipitation",
+        "variable": "pr",
+        "unit": "inches",
         "data": result
     }
 
@@ -42,6 +72,3 @@ def average_yearly_temperature(
 @app.get("/")
 def api_status():
     return {"Status": "Operational"}
-
-
-
