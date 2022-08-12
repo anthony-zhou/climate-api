@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 import urllib.parse
 
-from lib.thredds import get_average_temperature, get_yearly_precipitation
+from lib.thredds import get_average_temperature, get_yearly_precipitation, get_average_humidity
 
 load_dotenv()
 
@@ -65,6 +65,33 @@ def total_yearly_precipitation(
         "name": "Total yearly precipitation",
         "variable": "pr",
         "unit": "inches",
+        "data": result
+    }
+
+
+@app.get('/average_humidity')
+def average_yearly_humidity(
+        address: str = Query(..., description="Street address. Example: `1600 Pennsylvania Ave NW, Washington DC`"),
+        years: str = Query(..., description="Comma-separated list of years. Example: `2020,2060`"),
+        units: str = Query('relative', description="Either `specific` or `relative` humidity. Default is `relative`")
+):
+    coords = get_address_lat_lng(address)
+    if coords == "Location not found":
+        return {
+            "message": "Location not found. Either specify more of the address, or try a different address."
+        }
+    var_name = "hurs" if units == 'relative' else 'huss'
+    if units != 'relative' and units != 'specific':
+        return {
+            "message": "Invalid `units` value. Please specify either `relative` or `specific`. "
+        }
+    years = [int(year) for year in years.split(',')]
+    result = get_average_humidity(coords, years, var_name)
+
+    return {
+        "name": "Average " + units + " humidity",
+        "variable": var_name,
+        "unit": "%" if units == 'relative' else 'kg / kg',
         "data": result
     }
 

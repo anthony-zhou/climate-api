@@ -107,3 +107,26 @@ def get_yearly_precipitation(coords: tuple, years: list[int], window_size=2):
             result[year] = "Not found"
 
     return result
+
+
+def get_average_humidity(coords: tuple, years: list[int], unit_var_name: str, window_size=2):
+    lat = coords[0]
+    lon = coords[1] if coords[1] > 0 else 360 + coords[1]
+    datasets = _load_datasets(years, var_name=unit_var_name)
+
+    result = {}
+    for year, data in datasets.items():
+        jj = np.argmin((data['lat'][:] - lat) ** 2)
+        ii = np.argmin((data['lon'][:] - lon) ** 2)
+
+        # Sample one out of every window_size precipitation rates.
+        time_series = data[unit_var_name][::window_size, jj, ii]
+
+        # Convert precipitation flux to inches
+        result[year] = np.average(time_series).item()
+
+    for year in years:
+        if year not in result:
+            result[year] = "Not found"
+
+    return result
